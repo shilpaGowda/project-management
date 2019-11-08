@@ -43,8 +43,27 @@
       <span class="navbar-brand mb-0 h1">Project Management</span>
     </nav>
     <main class="container">
-      <h1 class="text-uppercase h2">Students - ISE</h1>
-      <section class="row mt-5">
+      <div class="d-flex row justify-content-between align-items-center">
+        <h1 class="text-uppercase h4 my-4">Students - ISE</h1>
+
+        <form>
+          <select id="inputState" class="form-control">
+            <option selected>Choose Class...</option>
+            <option value="1A">1A</option>
+            <option value="1B">1B</option>
+            <option value="1C">1C</option>
+            <option value="3A">3A</option>
+            <option value="3A">3A</option>
+            <option value="3B">3B</option>
+            <option value="5A">5A</option>
+            <option value="5B">5B</option>
+            <option value="7A">7A</option>
+            <option value="7B">7B</option>
+          </select>
+        </form>
+      </div>
+
+      <section class="row">
         <div class="col-md-3">
           <ul class="list-group">
             <li class="list-group-item">
@@ -62,59 +81,81 @@
           </ul>
         </div>
 
-        <div class="col-md-9 border rounded p-4 mt-3 mt-md-0">
-          <h4>Information Science and Engineering <em> (IS&amp;E)</em></h4>
-
-          <table class="table text-center table-responsive">
+        <div class="col-md-9 border rounded px-4 mt-3 mt-md-0">
+          <table class="table">
             <thead>
-              <tr>
-                <th scope="col">Name</th>
-                <th scope="col">USN</th>
-                <th scope="col">Sem</th>
-                <th scope="col">Phone</th>
-                <th scope="col">Email</th>
-                <th scope="col">Projects</th>
-                <th scope="col">Actions</th>
+              <tr class="row">
+                <th class="col-md-4 border-0">Student</th>
+                <th class="col-md-4 border-0">USN</th>
+                <th class="col-md-2 border-0">Projects</th>
+                <th class="col-md-2 border-0">Actions</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Kruthi</td>
-                <td>4GH11CS409</td>
-                <td>6</td>
-                <td>8989787878</td>
-                <td>kruthi@zysk.com</td>
-                <td>
-                  2/1
+              <tr class="row border-top">
+                <td class="col-sm-4 border-0">
+                  <div class="d-flex justify-content-start align-items-center">
+                    <p class="my-0">
+                      <img
+                        src="http://lorempixel.com/40/40/people/"
+                        alt="Student"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Student - Varun Umesh"
+                        class="team-member rounded-circle shadow-sm"
+                      />
+                    </p>
+                    <p class="ml-3 my-0">
+                      <span class="name">Varun Umesh</span><br />
+                      <small>
+                        <i class="far fa-envelope-open"></i> varun@zysk.in
+                        <br />
+                        <i class="fas fa-phone-alt"></i> 9090909088
+                      </small>
+                    </p>
+                  </div>
                 </td>
-                <td>
+                <td class="col-sm-4 border-0 my-auto">
+                  4GH11CS409
+                </td>
+                <td class="col-sm-2 border-0 my-auto">
+                  1/2
+                </td>
+                <td class="col-sm-2 border-0 my-auto">
                   <i class="far fa-edit"></i> &nbsp;
                   <i class="far fa-trash-alt"></i>
                 </td>
               </tr>
-              <tr>
-                <td>Rashmi</td>
-                <td>4GH11CS408</td>
-                <td>3</td>
-                <td>rashmi@zysk.com</td>
-                <td>8989498986</td>
-                <td>1/1</td>
-                <td>
-                  <i class="far fa-edit"></i> &nbsp;
-                  <i class="far fa-trash-alt"></i>
+              <tr class="row border-top">
+                <td class="col-sm-4 border-0">
+                  <div class="d-flex justify-content-start align-items-center">
+                    <p class="my-0">
+                      <img
+                        src="http://lorempixel.com/40/40/people/"
+                        alt="Student"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Student - Kruthi"
+                        class="team-member rounded-circle shadow-sm"
+                      />
+                    </p>
+                    <p class="ml-3 my-0">
+                      <span class="name">Kruthi Narayan</span><br />
+                      <small>
+                        <i class="far fa-envelope-open"></i> kruthi@zysk.in
+                        <br />
+                        <i class="fas fa-phone-alt"></i> 9090909056
+                      </small>
+                    </p>
+                  </div>
                 </td>
-              </tr>
-
-              <tr>
-                <td>Krithi</td>
-                <td>4GH11CS407</td>
-                <td>6</td>
-                <td>8989787868</td>
-                <td>krithi@zysk.com</td>
-                <td>
-                  2/1
+                <td class="col-sm-4 border-0 my-auto">
+                  4GH11CS408
                 </td>
-                <td>
+                <td class="col-sm-2 border-0 my-auto">
+                  2/2
+                </td>
+                <td class="col-sm-2 border-0 my-auto">
                   <i class="far fa-edit"></i> &nbsp;
                   <i class="far fa-trash-alt"></i>
                 </td>
@@ -148,7 +189,7 @@
     ></script>
     <script
       type="text/javascript"
-      src="/node_modules/bootstrap/dist/js/bootstrap.min.js"
+      src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
     ></script>
     <!-- endbuild -->
     <!-- build:js /scripts/main.js -->
